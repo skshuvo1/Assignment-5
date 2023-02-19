@@ -1,4 +1,4 @@
-#Calculation-field{
+#triangle-calculation, #rectangle-calculation, #parallelogram-calculation, #rhombus-calculation, #pentagon-calculation, #ellipse-calculation{
     display: flex;
     visibility: hidden;
 

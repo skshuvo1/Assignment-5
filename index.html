@@ -48,15 +48,15 @@
                 <h4 class="text-center text-2xl">Area (A) = W * I</h4>
                 <div class="grid grid-cols-2 grid-cols-sm-1 auto-cols-auto m-auto text-center gap-4 mt-4">
                     <div>
-                        <input class = "p-2" type="number" placeholder="b">
+                        <input id = "rectangle-width" class = "p-2" type="number" placeholder="w">
                 <span>cm</span>
                     </div>
                 <div>
-                    <input class = "p-2" type="number" placeholder="h">
+                    <input id = "rectangle-length" class = "p-2" type="number" placeholder="l">
                 <span>cm</span>
                 </div>
                 </div>
-                <button class="bg-blue-800 text-white py-3 w-3/4 rounded ml-8 mt-4 mb-6">Calculate</button>
+                <button id = "rectangle-btn" class="bg-blue-800 text-white py-3 w-3/4 rounded ml-8 mt-4 mb-6">Calculate</button>
                 
             </div>
 
@@ -67,15 +67,15 @@
                 <h3 class="text-center">b=10cm, h=12cm</h3>
                 <div class="grid grid-cols-2 grid-cols-sm-1 auto-cols-auto m-auto text-center gap-4 mt-4">
                     <div>
-                        <input class = "p-2" type="number" placeholder="b">
+                        <input id = "parallelogram-base" class = "p-2" type="number" placeholder="b">
                 <span>cm</span>
                     </div>
                 <div>
-                    <input class = "p-2" type="number" placeholder="h">
+                    <input id = "parallelogram-height" class = "p-2" type="number" placeholder="h">
                 <span>cm</span>
                 </div>
                 </div>
-                <button class="bg-blue-800 text-white py-3 w-3/4 rounded ml-8 mt-4 mb-6">Calculate</button>
+                <button id = "parallelogram-btn" class="bg-blue-800 text-white py-3 w-3/4 rounded ml-8 mt-4 mb-6">Calculate</button>
                 
             </div>
 
@@ -86,15 +86,15 @@
                 <h3 class="text-center">d1 = 16cm, d2 = 8cm</h3>
                 <div class="grid grid-cols-2 grid-cols-sm-1 auto-cols-auto m-auto text-center gap-4 mt-4">
                     <div>
-                        <input class = "p-2" type="number" placeholder="b">
+                        <input id = "rhombus-dia1" class = "p-2" type="number" placeholder="d1">
                 <span>cm</span>
                     </div>
                 <div>
-                    <input class = "p-2" type="number" placeholder="h">
+                    <input id = "rhombus-dia2" class = "p-2" type="number" placeholder="d2">
                 <span>cm</span>
                 </div>
                 </div>
-                <button class="bg-blue-800 text-white py-3 w-3/4 rounded ml-8 mt-4 mb-6">Calculate</button>
+                <button id = "rhombus-btn" class="bg-blue-800 text-white py-3 w-3/4 rounded ml-8 mt-4 mb-6">Calculate</button>
                 
             </div>
 
@@ -105,15 +105,15 @@
                 <h3 class="text-center">p = 6cm, b = 10cm</h3>
                 <div class="grid grid-cols-2 grid-cols-sm-1 auto-cols-auto m-auto text-center gap-4 mt-4">
                     <div>
-                        <input class = "p-2" type="number" placeholder="b">
+                        <input id = "pentagon-base" class = "p-2" type="number" placeholder="b">
                 <span>cm</span>
                     </div>
                 <div>
-                    <input class = "p-2" type="number" placeholder="h">
+                    <input id = "pentagon-dia" class = "p-2" type="number" placeholder="h">
                 <span>cm</span>
                 </div>
                 </div>
-                <button class="bg-blue-800 text-white py-3 w-3/4 rounded ml-8 mt-4 mb-6">Calculate</button>
+                <button id = "penta-btn" class="bg-blue-800 text-white py-3 w-3/4 rounded ml-8 mt-4 mb-6">Calculate</button>
                 
             </div>
 
@@ -124,15 +124,15 @@
                 <h3 class="text-center">a = 10cm, b = 4cm</h3>
                 <div class="grid grid-cols-2 grid-cols-sm-1 auto-cols-auto m-auto text-center gap-4 mt-4">
                     <div>
-                        <input class = "p-2" type="number" placeholder="b">
+                        <input id = "first-input" class = "p-2" type="number" placeholder="b">
                 <span>cm</span>
                     </div>
                 <div>
-                    <input class = "p-2" type="number" placeholder="h">
+                    <input  id = "second-input" class = "p-2" type="number" placeholder="h">
                 <span>cm</span>
                 </div>
                 </div>
-                <button class="bg-blue-800 text-white py-3 w-3/4 rounded ml-8 mt-4 mb-6">Calculate</button>  
+                <button id = "ellipse-btn" class="bg-blue-800 text-white py-3 w-3/4 rounded ml-8 mt-4 mb-6">Calculate</button>  
             </div>
             
            </div>
@@ -141,7 +141,7 @@
 
            <div  class="text-center">
             <h1 class=" text-3xl ml-8">Area Calculation</h1></br>
-            <div class="flex flex-row" id = "Calculation-field">
+            <div class="flex flex-row" id = "triangle-calculation">
                 <div>
                     <h2 class="mr-6 font-bold text-2xl">1.Triangle</h2>
                 </div>
@@ -151,11 +151,12 @@
             <div>
                 <button id = "convert" class="bg-blue-800 px-6 py-1 text-white rounded">Convert to m2</button>
             </div>
-            </div>
+            </div></br>
 
-            <div class="flex flex-row" id = "Calculation-field">
+            
+            <div class="flex flex-row" id = "rectangle-calculation">
                 <div>
-                    <h2 class="mr-6 font-bold text-2xl">1.Rectangle</h2>
+                    <h2 class="mr-6 font-bold text-2xl">2.Rectangle</h2>
                 </div>
                 <div>
                     <input class = "text-center text-xl" id="rectangle-result" type="text">
@@ -163,8 +164,55 @@
             <div>
                 <button id = "convert" class="bg-blue-800 px-6 py-1 text-white rounded">Convert to m2</button>
             </div>
+            </div></br>
+
+            <div class="flex flex-row" id = "parallelogram-calculation">
+                <div>
+                    <h2 class="mr-6 font-bold text-2xl">3.Parallelogram</h2>
+                </div>
+                <div>
+                    <input class = "text-center text-xl" id="parallelogram-result" type="text">
+                </div>
+            <div>
+                <button id = "convert" class="bg-blue-800 px-6 py-1 text-white rounded">Convert to m2</button>
             </div>
-            
+            </div></br>
+
+            <div class="flex flex-row" id = "rhombus-calculation">
+                <div>
+                    <h2 class="mr-6 font-bold text-2xl">4.Rhombus</h2>
+                </div>
+                <div>
+                    <input class = "text-center text-xl" id="rhombus-result" type="text">
+                </div>
+            <div>
+                <button id = "convert" class="bg-blue-800 px-6 py-1 text-white rounded">Convert to m2</button>
+            </div>
+            </div></br>
+
+            <div class="flex flex-row" id = "pentagon-calculation">
+                <div>
+                    <h2 class="mr-6 font-bold text-2xl">5.Pentagon</h2>
+                </div>
+                <div>
+                    <input class = "text-center text-xl" id="pentagon-result" type="text">
+                </div>
+            <div>
+                <button id = "convert" class="bg-blue-800 px-6 py-1 text-white rounded">Convert to m2</button>
+            </div>
+            </div></br>
+
+            <div class="flex flex-row" id = "ellipse-calculation">
+                <div>
+                    <h2 class="mr-6 font-bold text-2xl">5.Ellipse</h2>
+                </div>
+                <div>
+                    <input class = "text-center text-xl" id="ellipse-result" type="text">
+                </div>
+            <div>
+                <button id = "convert" class="bg-blue-800 px-6 py-1 text-white rounded">Convert to m2</button>
+            </div>
+            </div>
            </div>
         </section>
         
